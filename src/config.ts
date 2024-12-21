@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "Agung Laksono",
   profile: "https://theagung.com/",
   desc: "A software engineer who loves to learn and share knowledge.",
-  title: "Agung Laksono",
+  title: "Agung Laksono - Full Stack Developer",
   ogImage: "theagung-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
