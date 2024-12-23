@@ -23,12 +23,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>About Me</h1>
       <p>
-        Hi, I'm Agung Laksono originally from Indonesia. I'm a <strong>Full Stack Developer</strong>.
-        I have 4 years of experience in the software industry. Currently my weapon is <strong>Ruby on Rails</strong> to build a <strong>Web Application</strong>.
-        Beside that, I also have other support weapons like <strong>PostgreSQL</strong>, <strong>Javascript</strong>, 
-        <strong>Docker</strong>, <strong>Linux OS</strong>, <strong>GCP</strong>, <strong>CI/CD</strong>, <strong>HTML/CSS</strong> and so on.
+        Hi, I'm <strong>Agung Laksono</strong> originally from <strong>Indonesia</strong>. I'm a <strong>Full Stack Developer</strong>.
+        I have <strong>4 years</strong> of experience in the software industry.</br>
+        Currently my weapon is <strong>Ruby on Rails</strong>.
+        Beside that, I also have other support weapons like <strong>PostgreSQL/MySQL</strong>, <strong>React</strong>, <strong>Docker</strong>, <strong>Linux OS</strong>, <strong>CI/CD</strong>, <strong>HTML/CSS</strong> and so on.
       </p>
       {
         // only display if at least one social link is enabled
@@ -43,38 +42,40 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
     <Hr />
 
-    {
-      recentPosts.length < 0 && (
-        <section id="recent-posts">
-          <h2>Recent Posts</h2>
-          <ul>
-            {recentPosts.map(
-              ({ data, slug }, index) =>
-                index < SITE.postPerIndex && (
-                  <Card
-                    href={`/posts/${slug}/`}
-                    frontmatter={data}
-                    secHeading={false}
-                  />
-                )
-            )}
-          </ul>
-        </section>
-      )
-    }
+    <section id="recent-posts">
+      <h1>Recent Notes</h1>
+      <p>
+        Here are some of my recent notes that I've written. Will be updated soon.
+      </p>
+      {
+        recentPosts.length < 0 && (
+            <ul>
+              {recentPosts.map(
+                ({ data, slug }, index) =>
+                  index < SITE.postPerIndex && (
+                    <Card
+                      href={`/notes/${slug}/`}
+                      frontmatter={data}
+                      secHeading={false}
+                    />
+                  )
+              )}
+            </ul>
+        )
+      }
+      <div class="all-posts-btn-wrapper">
+        <LinkButton href="/notes/">
+          All Notes
+          <svg xmlns="http://www.w3.org/2000/svg"
+            ><path
+              d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
+            ></path>
+          </svg>
+        </LinkButton>
+      </div>
+    </section>
 
-    <div class="all-posts-btn-wrapper">
-      <LinkButton href="/posts/">
-        My Notes
-        <svg xmlns="http://www.w3.org/2000/svg"
-          ><path
-            d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
-          ></path>
-        </svg>
-      </LinkButton>
-    </div>
   </main>
-
   <Footer />
 </Layout>
 
