@@ -2,35 +2,29 @@
 layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
+Hi folks, I am <strong>Agung Laksono</strong>, a <strong>Full Stack Developer</strong> from Indonesia with <strong>4 years</strong> of experience.
+I started my professional career in <strong>2014</strong>, which means it's been almost <strong>10 years</strong>!
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+<strong>Ruby on Rails</strong> is my main weapon right now, however, I also open to using other weapons if needed.
+My weapons consist of PHP (Laravel & CI), NodeJS, ReactJS, GraphQL, PostgreSQL/MySQL, Linux OS, TypeScript/Javascript, HTML/CSS, GO.
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
-
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+I also have knowledge of <strong>DevOps</strong> such as Docker, Kubernetes CI/CD as well as setting up VPS to deploy an application.
 
 <div>
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
 </div>
 
-## Tech Stack
+## Fun Facts:
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+Operating a computer is a ordinary thing for me, I still remember the first time I operated it, Windows 95.
+I grew up with online RPG games, at that time I decided to become a game developer, lol.
 
-## Features
+Love Gardening, Cooking and Traveling.
 
-Here are certain features of this site.
+The biggest fan of OASIS, I am grateful they will reunion in 2025.
 
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
+I really love Japanese culture, currently I am start to learning Japanese.
 
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+
+Finally, after a long time my website is launch 🚀
+
