@@ -1,0 +1,27 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+
+export interface Props {
+  frontmatter: {
+    title: string;
+    description?: string;
+  };
+}
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={`${frontmatter.title} | ${SITE.title}`}>
+  <Header activeNav="travel-stories" />
+  <Main pageTitle="" pageDesc="The stories will updated as soon as possible.">
+    <!-- <ul>
+    TODO: create content about travel 
+    </ul> -->
+  </Main>
+
+  <Footer noMarginTop={false} />
+</Layout>

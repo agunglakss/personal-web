@@ -1,6 +1,5 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
 ---
 Hi folks, I am <strong>Agung Laksono</strong>, a <strong>Full Stack Developer</strong> from Indonesia with <strong>4 years</strong> of experience.
 I started my professional career in <strong>2014</strong>, which means it's been almost <strong>10 years</strong>!
@@ -8,7 +7,7 @@ I started my professional career in <strong>2014</strong>, which means it's been
 <strong>Ruby on Rails</strong> is my main weapon right now, however, I also open to using other weapons if needed.
 My weapons consist of PHP (Laravel & CI), NodeJS, ReactJS, GraphQL, PostgreSQL/MySQL, Linux OS, TypeScript/Javascript, HTML/CSS, GO.
 
-I also have knowledge of <strong>DevOps</strong> such as Docker, Kubernetes CI/CD as well as setting up VPS to deploy an application.
+I also have knowledge of <strong>DevOps</strong> such as CI/CD, Docker, Kubernetes as well as setting up VPS to deploy an application.
 
 <div>
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
